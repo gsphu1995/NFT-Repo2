@@ -33,7 +33,7 @@ import {
   MetadataFile,
   StringPublicKey,
   getAssetCostToStore,
-  LAMPORT_MULTIPLIER
+  LAMPORT_MULTIPLIER,
 } from '@oyster/common';
 import { useWallet } from '@solana/wallet-adapter-react';
 import { Connection } from '@solana/web3.js';
@@ -240,7 +240,7 @@ const CategoryStep = (props: {
       <Row className="call-to-action">
         <h2>Create a new item</h2>
         <p>
-          First time creating on Metaplex?{' '}
+          First time creating on ACKCS?{' '}
           <a href="#">Read our creators’ guide.</a>
         </p>
       </Row>
@@ -1253,13 +1253,13 @@ const Congrats = (props: {
 
   const newTweetURL = () => {
     const params = {
-      text: "I've created a new NFT artwork on Metaplex, check it out!",
+      text: "I've created a new NFT artwork on ACKCS, check it out!",
       url: `${
         window.location.origin
       }/#/art/${props.nft?.metadataAccount.toString()}`,
-      hashtags: 'NFT,Crypto,Metaplex',
+      hashtags: 'NFT,Crypto,ACKCS',
       // via: "Metaplex",
-      related: 'Metaplex,Solana',
+      related: 'ACKCS,Solana',
     };
     const queryParams = new URLSearchParams(params).toString();
     return `https://twitter.com/intent/tweet?${queryParams}`;
