@@ -38,7 +38,7 @@ export const AuctionListView = () => {
   return (
     <>
       <Banner
-        src="/main-banner.svg"
+        src="/ackcs-banner.jpg"
         headingText="The amazing world of ACKCS."
         subHeadingText="Buy exclusive ACKCS NFTs."
         actionComponent={<HowToBuyModal buttonClassName="secondary-btn" />}
